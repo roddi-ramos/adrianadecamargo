@@ -1,0 +1,225 @@
+/* =========================================
+           1. VARIÁVEIS E PALETA DE CORES
+    ========================================= */
+:root {
+    --preto-principal: #0F0F10;
+    --preto-secundario: #181818;
+    --dourado-principal: #C6A75E;
+    --dourado-hover: #B8933F;
+    --texto-branco: #F5F5F5;
+    --areia-neutro: #E8E1D5;
+    --cinza-tecnico: #6E6E6E;
+    --cinza-apoio: #BFBFBF;
+
+    --font-titulos: 'Cormorant Garamond', serif;
+    --font-textos: 'Montserrat', sans-serif;
+}
+
+/* =========================================
+           2. RESET E CONFIGURAÇÕES GERAIS
+    ========================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-textos);
+    background-color: var(--preto-principal);
+    color: var(--texto-branco);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+  header#hero img {
+    max-width: 50%;
+    margin-bottom: 2rem;
+  }
+
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Container Limitado */
+.container {
+    max-width: 1140px;
+}
+
+/* =========================================
+           3. HIERARQUIA TIPOGRÁFICA
+    ========================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    color: var(--dourado-principal);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+    color: var(--areia-neutro);
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--cinza-apoio);
+}
+
+strong,
+b {
+    font-weight: 500;
+    color: var(--texto-branco);
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: var(--cinza-apoio);
+}
+
+/* =========================================
+           4. SISTEMA DE ESPAÇAMENTO (MOBILE-FIRST)
+    ========================================= */
+.section-padding {
+    padding: 60px 0;
+}
+
+@media (min-width: 992px) {
+    .section-padding {
+        padding: 100px 0;
+    }
+}
+
+/* Classes Utilitárias de Fundo */
+.bg-primary-black {
+    background-color: var(--preto-principal);
+}
+
+.bg-secondary-black {
+    background-color: var(--preto-secundario);
+}
+
+/* =========================================
+           5. COMPONENTES: BOTÃO
+    ========================================= */
+.btn-gold {
+    display: block;
+    width: 100%;
+    background-color: var(--dourado-principal);
+    color: var(--preto-principal);
+    border-radius: 6px;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-textos);
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    box-shadow: none;
+}
+
+@media (min-width: 992px) {
+    .btn-gold {
+        display: inline-block;
+        width: auto;
+        min-width: 280px;
+    }
+}
+
+.btn-gold:hover {
+    background-color: var(--dourado-hover);
+    color: var(--preto-principal);
+    transform: scale(1.03);
+    text-decoration: none;
+}
+
+/* =========================================
+           6. COMPONENTES ESTRUTURAIS
+    ========================================= */
+/* Bloco Modular - Carta */
+.carta-adriana {
+    background-color: var(--preto-secundario);
+    border-left: 3px solid var(--dourado-principal);
+    padding: 40px 25px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 0 8px 8px 0;
+}
+
+.carta-adriana p {
+    color: var(--texto-branco);
+    font-weight: 300;
+}
+
+.nota-dev {
+    font-size: 0.85rem;
+    color: var(--cinza-tecnico);
+    font-style: italic;
+    margin-top: 2rem;
+    border-top: 1px solid var(--cinza-tecnico);
+    padding-top: 1rem;
+}
+
+/* Cards e Listas customizadas */
+.list-unstyled li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+}
+
+/* Preço Ancoragem */
+.preco-destaque {
+    font-family: var(--font-titulos);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--dourado-principal);
+    margin: 1.5rem 0;
+    line-height: 1;
+}
+
+/* =========================================
+           7. ANIMAÇÕES (INTERSECTION OBSERVER)
+    ========================================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
