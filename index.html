@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700;900&family=Montserrat:wght@300;400;500&display=swap"
         rel="stylesheet">
@@ -18,13 +22,17 @@
     <link rel="stylesheet" href="src/css/style.css">
 
 </head>
-<body> 
-    
-    <!--  ALERTA -- APAGAR QUANDO ENTREGAR -->
-         <div style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 1rem; background-color: #013440; position: fixed; width: 100%; z-index: 9999;">
-        <p style="color: #f0f8ff; text-align: center;">Página demonstrativa, não é a versão final. Para finalização da página entre em contato com o responsável técnico no <br> <a href="https://wa.me/5541988501026" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #f0f8ff;"><i class="bi bi-whatsapp"></i> WhatsApp</a></p>
-    </div>
 
+<body>
+
+    <div
+        style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 1rem; background-color: #013440; position: fixed; width: 100%; z-index: 9999;">
+        <p style="color: #f0f8ff; text-align: center;">Página demonstrativa, não é a versão final. Para finalização da
+            página entre em contato com o responsável técnico no <br> <a href="https://wa.me/5541988501026"
+                target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #f0f8ff;"><i
+                    class="bi bi-whatsapp"></i> WhatsApp</a></p>
+    </div>
+    
     <header id="hero" class="bg-primary-black section-padding fade-in">
         <div class="container text-center">
             <div class="row justify-content-center">
@@ -35,7 +43,8 @@
                         especializada.</p>
                     <p>Material completo com mais de 40 páginas desenvolvido por Adriana de Camargo para transformar sua
                         rotina de autocuidado.</p>
-                    <a href="#" class="btn-gold btn-buy-track">Quero acessar o guia agora</a>
+                    <a href="https://pay.kiwify.com.br/RTLZrXF" class="btn-gold btn-buy-track">Quero acessar o guia
+                        agora</a>
                 </div>
             </div>
         </div>
@@ -88,6 +97,11 @@
             <div class="container">
                 <article class="carta-adriana">
                     <h2 class="mb-4">Uma mensagem da Adriana</h2>
+
+                    <div class="img-container">
+                        <img src="/src/img/foto-autora.svg" alt="Adriana de Camargo" class="img-adriana">
+                    </div>
+
                     <p>Eu criei este guia porque, ao longo dos meus atendimentos, percebi algo em comum:</p>
                     <p>Muitas pessoas convivem diariamente com tensões e pequenos desconfortos, mas não sabem como
                         cuidar do próprio corpo com segurança.</p>
@@ -104,6 +118,10 @@
                 </article>
             </div>
         </section>
+
+        <style>
+
+        </style>
 
         <section id="prova" class="bg-primary-black section-padding fade-in">
             <div class="container">
@@ -229,7 +247,8 @@
 
                             <div class="preco-destaque">R$ 49,90</div>
 
-                            <a href="#" class="btn-gold btn-buy-track">Quero acessar o guia agora</a>
+                            <a href="https://pay.kiwify.com.br/RTLZrXF" class="btn-gold btn-buy-track">Quero acessar o
+                                guia agora</a>
                             <p class="mt-3 mb-0 small" style="color: var(--cinza-tecnico);">Acesso imediato após
                                 confirmação.</p>
                         </div>
@@ -240,34 +259,38 @@
 
     </main>
 
-  <footer class="bg-dark text-light pt-5 pb-3">
-    <div class="container text-center text-md-start">
-      <div class="row g-4 justify-content-center">
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container text-center text-md-start">
+            <div class="row g-4 justify-content-center">
 
-        <div class="col-md-4 text-center">
-          <img src="src/img/logo.svg" alt="Logo" style="width: 150px; filter: brightness(0) invert(1);">
+                <div class="col-md-4 text-center">
+                    <img src="src/img/logo.svg" alt="Logo" style="width: 150px; filter: brightness(0) invert(1);">
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <h5 class="mb-3" style="color: var(--color-primary);">Siga-nos</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://www.instagram.com/massoterapeuta_adrianacamargo" class="text-light fs-4"
+                            target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/AdrianadeCamargoMassoterapeuta" class="text-light fs-4"
+                            target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@massoterapeuta_adriana" class="text-light fs-4" target="_blank"
+                            rel="noopener noreferrer"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-5 pt-3 text-center small">
+                <p style="color: #f5f5f5;" class="mb-1">&copy; 2026 Adriana de Camargo. Todos os direitos reservados.
+                </p>
+                <a style="color: #f5f5f5;" href="pages/politica.html" class="text-decoration-none">Política
+                    de Privacidade</a><br>
+                <a href="https://ramossd.com/" target="_blank" rel="noopener" class="text-decoration-none"
+                    style="color: #f5f5f5;">Produzido por<img src="src/img/logo-ramossd.svg" style="width: 5rem;"
+                        alt="Logo Ramos SD"></a>
+            </div>
         </div>
-
-        <div class="col-md-4 text-center">
-          <h5 class="mb-3" style="color: var(--color-primary);">Siga-nos</h5>
-          <div class="d-flex justify-content-center gap-3">
-            <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-light fs-4"><i class="bi bi-tiktok"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="border-top border-secondary mt-5 pt-3 text-center small">
-        <p  style="color: #f5f5f5;" class="mb-1">&copy; 2026 Adriana de Camargo. Todos os direitos reservados.</p>
-        <a  style="color: #f5f5f5;" href="pages/politica.html" class="text-decoration-none">Política
-          de Privacidade</a><br>
-        <a href="https://ramossd.com/" target="_blank" rel="noopener"
-          class="text-decoration-none"  style="color: #f5f5f5;">Produzido por<img src="src/img/logo-ramossd.svg"
-            style="width: 5rem;" alt="Logo Ramos SD"></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 
     <a href="https://wa.me/5541988501026" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
@@ -283,13 +306,15 @@
                     formulário.</p>
             </div>
             <div class="d-flex gap-2">
-                <a href="#" class="btn btn-sm btn-outline-light text-nowrap">Ler Política</a>
+                <a href="/pages/politica.html" class="btn btn-sm btn-outline-light text-nowrap">
+                    Ler Política
+                </a>
                 <button id="btn-aceitar-privacidade" class="btn btn-sm btn-primary">Entendi</button>
             </div>
         </div>
     </div>
 
-    <script src="src/js/cookie-privacidade.js"></script> <!-- ALERTA Verificar nao funcionamento -->
+    <script src="src/js/cookie-privacidade.js"></script>
     <script src="src/js/main.js"></script>
     <script src="src/js/tracking.js"></script>
 </body>

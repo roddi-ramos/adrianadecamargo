@@ -35,10 +35,32 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-  header#hero img {
+header#hero img {
     max-width: 50%;
     margin-bottom: 2rem;
-  }
+}
+
+.img-adriana {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto 24px auto;
+
+    /* efeito elegante */
+    filter: brightness(0.95) contrast(1.05);
+
+    /* sombra suave */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    /* borda sutil dourada */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.img-container {
+    text-align: center;
+    margin-bottom: 24px;
+}
 
 @media (min-width: 992px) {
     body {
@@ -257,24 +279,19 @@ li {
     color: white;
 }
 
-/* Privacy Banner */
-.privacy-banner {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 800px;
-    background-color: #013440;
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    z-index: 1050;
-    display: none; /* JS vai trocar para flex ou block */
-}
+
 
 /* --- 4. Animações --- */
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
